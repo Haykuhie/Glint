@@ -1,6 +1,7 @@
 *{
     margin:0;
     padding:0;
+    max-width:100%;
     font-family: 'Montserrat', sans-serif;
 }
 .margin{
@@ -10,9 +11,6 @@
 .parallax{
   background:url('assets/hero-bg.jpg')  repeat fixed 100%;  
   background-size: cover;
-
-  
- 
 }
 .black{
     background:rgba(0, 0, 0, 0.7);
@@ -25,9 +23,11 @@
 }
 .menu-1{
  display:flex;
- justify-content: space-between;
+ justify-content: space-around;
+ width:100%;
 
 }
+
 div a{
     cursor:pointer;
 }
@@ -36,24 +36,35 @@ div a{
     width:25%;
     height:25px;
     padding:35px;
-    
+    cursor: pointer;
+}
+.blk{
+    float:right;
+    width: 130px;
+    height:65px;
+    display:flex;
+    text-align: center;
+    z-index:100;
+    cursor:pointer;
+    margin:5px 20px;
 }
 
 .menu{
-    position:fixed;
+ 
     width:80%;
     text-align:right;
     color:white;
     line-height: 80px;
-    padding:10px 30px;
-
+    padding:10px 10px;
+    
 }
 .menu_text{
-    margin:15px;
+    margin: -5px 5px;
     color:rgb(33, 196, 82);
     font-family: 'Montserrat', sans-serif;
     font-weight:bold;
     cursor:pointer;
+    
 }
 .menu_text:hover{
     color:white;
@@ -62,7 +73,6 @@ div a{
 
 .menu_icon{
 cursor:pointer;
-
 }
 .welcome{
     padding-left:150px;
@@ -73,7 +83,7 @@ cursor:pointer;
   color:white;
   opacity:0.5;  
   font-size:20px;
-  
+  text-align:left;
 }
 .paragraph{
     color:white;  
@@ -81,7 +91,7 @@ cursor:pointer;
     font-weight:900;
 }
 .buttons{
-    
+    width:250px;
     color:white;
     padding-left:150px;
     padding-top:100px;
@@ -119,10 +129,15 @@ cursor:pointer;
 }
 .for_icons{
     display:flex;
+    justify-content: space-between;
+}
+.fix{
+  width:90%;
 }
 .icons{
-    margin-left:300px;
-    margin-top: 170px;
+    margin:30px 10px;
+    padding:0;
+    width:10%;
 }
 .fa-icon:hover{
     background:rgb(156, 170, 162);
@@ -238,7 +253,9 @@ position:relative;
     justify-content: space-around;
     padding:10px;
     margin-top:60px;
+    margin-left:100px;
 }
+
 .paragraphs{
     font-size:18px;
     text-align:left;
@@ -251,7 +268,7 @@ position:relative;
     font-weight:bold;
     margin:10px;
 }
-.fa-icn{
+.fa-Icn{
     color:rgb(57, 181, 74);
 }
 .dark_background{
@@ -288,31 +305,205 @@ display:flex;
     width:100%;
     height: 30%;
     background-image:url(assets/lady.jpg);
+    position:relative;
+    background-size:100%;
+    transition:1s;
+  
 }
+.img1::after{
+    background:rgba(0, 0, 0, 0.8);
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    content:'+';
+    text-align: center;   
+    font-size: 40px;
+    color:white;
+    display:none;
+    cursor:pointer;
+}
+.img1:hover{
+    transition:1s;
+    background-size:105%;
+}
+.img1:hover::after{
+    display:block;
+    transition:1s;
+    padding: 220px;
+}
+
+
 .img2{
     width:100%;
     height: 30%;
     background-image:url(assets/car.jpg);
+    position:relative;
+    background-size:100%;
+    transition:1s;
 }
+
+.img2::after{
+    background:rgba(0, 0, 0, 0.8);
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    content:'+';
+    text-align: center;   
+    font-size: 40px;
+    color:white;
+    display:none;
+    cursor:pointer;
+   
+}
+.img2:hover{
+    transition:1s;
+    background-size:105%;
+   
+}
+.img2:hover::after{
+    display:block;
+    transition:1s;
+    padding: 220px;
+}
+
+
 .img3{
     width:100%;
     height: 40%;
     background-image:url(assets/guitarist.jpg);
+    position:relative;
+    background-size:107%;
+    transition:1s;
+  
+    
+}
+.img3::after{
+    background:rgba(0, 0, 0, 0.8);
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    content:'+';
+    text-align: center;   
+    font-size: 40px;
+    color:white;
+    display:none;
+    cursor:pointer;
+   
+}
+.img3:hover{
+    transition:1s;
+    background-size:110%;
+   
+}
+.img3:hover::after{
+    display:block;
+    transition:1s;
+    padding: 220px;
 }
 .img4{
     width:100%;
     height: 40%;
     background-image:url(assets/woodcraft.jpg);
+    position:relative;
+    background-size:107%;
+    transition:1s;
+}
+.img4::after{
+    background:rgba(0, 0, 0, 0.8);
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    content:'+';
+    text-align: center;   
+    font-size: 40px;
+    color:white;
+    display:none;
+    cursor:pointer;
+   
+}
+.img4:hover{
+    transition:1s;
+    background-size:110%;
+   
+}
+.img4:hover::after{
+    display:block;
+    transition:1s;
+    padding: 220px;
 }
 .img5{
     width:100%;
     height: 30%;
     background-image:url(assets/green.jpg);
+    position:relative;
+    background-size:100%;
+    transition:1s;
+}
+.img5::after{
+    background:rgba(0, 0, 0, 0.8);
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    content:'+';
+    text-align: center;   
+    font-size: 40px;
+    color:white;
+    display:none;
+    cursor:pointer;
+   
+}
+.img5:hover{
+    transition:1s;
+    background-size:105%;
+   
+}
+.img5:hover::after{
+    display:block;
+    transition:1s;
+    padding: 220px;
 }
 .img6{
     width:100%;
     height: 30%;
     background-image:url(assets/palmeira.jpg);
+    position:relative;
+    background-size:100%;
+    transition:1s;
+}
+.img6::after{
+    background:rgba(0, 0, 0, 0.8);
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    content:'+';
+    text-align: center;   
+    font-size: 40px;
+    color:white;
+    display:none;
+    cursor:pointer;
+   
+}
+.img6:hover{
+    transition:1s;
+    background-size:105%;
+   
+}
+.img6:hover::after{
+    display:block;
+    transition:1s;
+    padding: 220px;
 }
 .light_background{
     width:100%;
@@ -428,21 +619,19 @@ input{
  padding:10px;
  cursor:pointer;
 }
-.icons{
-   margin:30px 20px;
-   padding:0;
-}
+
 .fa-icn:hover{
     color:#33A242;
     transition:0.5s;
    }
 .footer{
-    width:100%;
+    width:92.6%;
     height:50vh;
     background:#111111;
     display:flex;
     justify-content: space-around;
     padding:50px;
+    background-size:cover;
 }
 .form{
     display:flex;
@@ -493,5 +682,10 @@ input{
     margin-top:62px;
     float:left;
     color:white;
-    margin-left:-80px;
+    margin-left:-20px;
+}
+.Icons{
+    display:flex;
+    justify-content: space-around;
+    margin:60px auto;
 }
