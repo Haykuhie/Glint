@@ -149,7 +149,7 @@ cursor:pointer;
     height:115vh;
     background:rgb(57, 181, 74);
 }
-div h1{
+div h2{
     text-align:center;
     font-size:15px;
     font-weight: bold;
@@ -215,7 +215,7 @@ position:relative;
     height:170vh;
 
 }
-section h1{
+section h2{
     text-align:center;
     font-size:18px;
     font-weight: bold;
@@ -640,7 +640,7 @@ input{
     height:100px;
 }
 .lastParagraph{
-    font-size:  5px;
+    font-size: 15px;
     color:white;
 }
 .glint{
